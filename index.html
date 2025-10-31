@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ajude o Drygoberto 💙</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url("https://i.postimg.cc/nhVqrcKx/download.jpg") no-repeat center center fixed;
+      background-size: contain;
+      background-color: #f5f5f5;
+      color: #222;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      background: rgba(173, 216, 230, 0.85);
+      /* azul claro transparente */
+      padding: 40px 30px;
+      border-radius: 25px;
+      max-width: 450px;
+      box-shadow: 0 15px 35px rgba(0, 0, 139, 0.3);
+      transition: transform 0.3s ease;
+      width: 90%;
+    }
+
+    .container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 25px 45px rgba(0, 0, 139, 0.5);
+    }
+
+    img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 15px rgba(0, 0, 139, 0.15);
+    }
+
+    h1 {
+      font-weight: 600;
+      font-size: 2rem;
+      color: #007bff;
+      margin-bottom: 16px;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 1rem;
+      color: #000000;
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+
+    .pix-box {
+      background: #e9f2ff;
+      border-radius: 18px;
+      padding: 25px 20px;
+      box-shadow: inset 0 0 7px #a1c4fd;
+      user-select: none;
+    }
+
+    .pix-box p {
+      margin: 0 0 13px 0;
+      font-weight: 500;
+      font-size: 1.15rem;
+      color: #007bff;
+    }
+
+    .pix-key {
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: #004a99;
+      word-wrap: break-word;
+      user-select: text;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+      box-shadow: 0 8px 20px rgba(0, 86, 179, 0.7);
+    }
+
+    footer {
+      margin-top: 28px;
+      font-size: 0.9rem;
+      color: #000000;
+      font-weight: 300;
+      font-weight: bold;
+    
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="https://i.postimg.cc/xjM7XTGT/484d9657-2ee8-4e13-ba93-0d88857a8fa2.jpg" alt="Dry" />
+    <h1>Ajude o Drygoberto 💙</h1>
+    <p>O Drygoberto precisa da sua ajuda para o seu tratamento.<br>Qualquer valor faz a diferença!</p>
+    <div class="pix-box">
+      <p>Chave PIX:</p>
+      <p id="pixKey" class="pix-key">(11)99505-2085</p>
+      <button onclick="copiarPix()">Copiar chave PIX</button>
+    </div>
+    <footer>
+        Oi titios, me chamo Drygoberto, tenho um ano e dois meses, e há alguns dias meus papais perceberam que eu estava chorando ao ser pego no colo
+        e já correram comigo para o veterinário!
+        De lá para cá, estou sem os movimentos das patinhas traseiras, tendo que me arrastar para me locomover. Provavelmente estou com PIF ou um linfoma
+        medular (FELV). Estou em tratamento, mas os custos são altos e a minha família precisa de ajuda para continuar arcando com as despesas médicas.
+        Peço ajuda de todos, seja com contribuições ou divulgando minha história.
+        Muito obrigado, titios!!! 🙏
+    </footer>
+  </div>
+
+  <script>
+    function copiarPix() {
+      const chave = document.getElementById("pixKey").textContent;
+      navigator.clipboard.writeText(chave).then(() => {
+        alert("Chave PIX copiada com sucesso!");
+      });
+    }
+  </script>
+</body>
+
+</html>
